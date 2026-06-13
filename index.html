@@ -1,1 +1,177 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polityka Prywatności · OPP Asystent</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            max-width: 720px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+            color: #1a1a1a;
+        }
+        h1 {
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 8px;
+        }
+        h2 {
+            margin-top: 32px;
+            color: #2563eb;
+        }
+        .meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 32px;
+        }
+        .highlight {
+            background: #f0f9ff;
+            border-left: 4px solid #2563eb;
+            padding: 12px 16px;
+            margin: 16px 0;
+        }
+        ul {
+            padding-left: 24px;
+        }
+        li {
+            margin: 6px 0;
+        }
+        a {
+            color: #2563eb;
+        }
+        footer {
+            margin-top: 48px;
+            padding-top: 16px;
+            border-top: 1px solid #ddd;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
 
+<h1>Polityka Prywatności — OPP Asystent</h1>
+
+<p class="meta">
+    Wersja: 1.0 · Obowiązuje od: 13 czerwca 2026<br>
+    Aplikacja: OPP Asystent (iOS) · Bundle ID: sg.oppasystent
+</p>
+
+<div class="highlight">
+    <strong>W skrócie:</strong> OPP Asystent działa <strong>całkowicie offline</strong>. 
+    Twoja lokalizacja GPS jest używana <strong>wyłącznie na urządzeniu</strong> i 
+    <strong>nie jest wysyłana na żaden serwer</strong>. Historia pomiarów zapisuje się 
+    tylko w pamięci iPhone'a. Aplikacja nie zbiera, nie udostępnia i nie sprzedaje 
+    żadnych danych osobowych.
+</div>
+
+<h2>1. Kto jest administratorem danych</h2>
+<p>
+    Administratorem aplikacji OPP Asystent jest osoba fizyczna — Sławomir Gawinowski, 
+    twórca aplikacji. Kontakt: <a href="mailto:slawek.gawinowski@me.com">slawek.gawinowski@me.com</a>.
+</p>
+
+<h2>2. Jakie dane są zbierane</h2>
+
+<h3>2.1 Lokalizacja GPS</h3>
+<p>
+    Aplikacja używa Twojej lokalizacji GPS w czasie rzeczywistym do:
+</p>
+<ul>
+    <li>Wykrywania zbliżania się do odcinków pomiaru średniej prędkości (OPP)</li>
+    <li>Obliczania średniej prędkości na odcinku pomiarowym</li>
+    <li>Detekcji bramek startowych i końcowych CANARD</li>
+</ul>
+
+<div class="highlight">
+    <strong>Lokalizacja jest przetwarzana wyłącznie lokalnie na Twoim urządzeniu.</strong> 
+    Nie jest wysyłana do żadnego serwera zewnętrznego, nie jest udostępniana osobom trzecim, 
+    nie jest zapisywana w chmurze.
+</div>
+
+<h3>2.2 Historia pomiarów</h3>
+<p>
+    Aplikacja zapisuje lokalnie (w pamięci Twojego iPhone'a) historię ostatnich 100 pomiarów. 
+    Każdy zapis zawiera: datę pomiaru, nazwę odcinka, średnią prędkość, status (w limicie/przekroczenie), 
+    powód zakończenia. <strong>Te dane nigdy nie opuszczają Twojego urządzenia.</strong>
+</p>
+
+<h3>2.3 Czego aplikacja NIE zbiera</h3>
+<ul>
+    <li>❌ Nie wymaga konta użytkownika</li>
+    <li>❌ Nie zbiera adresu email, imienia, ani innych danych osobowych</li>
+    <li>❌ Nie używa narzędzi analitycznych (Google Analytics, Mixpanel itp.)</li>
+    <li>❌ Nie używa systemów reklamowych</li>
+    <li>❌ Nie udostępnia danych firmom trzecim</li>
+    <li>❌ Nie używa identyfikatorów reklamowych (IDFA)</li>
+    <li>❌ Nie zbiera danych o urządzeniu poza tymi wymaganymi do działania iOS</li>
+</ul>
+
+<h2>3. Uprawnienia żądane przez aplikację</h2>
+
+<h3>3.1 Lokalizacja — "Zawsze" (Always)</h3>
+<p>
+    Aplikacja prosi o dostęp do lokalizacji w trybie <strong>Always</strong> 
+    (działanie w tle), aby pomiar prędkości działał gdy ekran iPhone'a jest zablokowany 
+    podczas jazdy autem. Bez tego uprawnienia pomiar zatrzyma się gdy zamkniesz aplikację 
+    lub zablokujesz ekran.
+</p>
+<p>
+    Możesz w każdej chwili zmienić to uprawnienie w 
+    <strong>Ustawienia → OPP Asystent → Lokalizacja</strong>.
+</p>
+
+<h3>3.2 Audio w tle (Background Audio)</h3>
+<p>
+    Aplikacja wykorzystuje uprawnienie audio w tle do odtwarzania komunikatów głosowych 
+    (np. "Pomiar rozpoczęty", "Przekroczenie") z głośnika telefonu lub samochodu 
+    nawet gdy ekran jest zablokowany. Aplikacja nie odtwarza muzyki ani innych dźwięków.
+</p>
+
+<h2>4. Przechowywanie i zabezpieczenie danych</h2>
+<p>
+    Wszystkie dane (historia pomiarów, ustawienia) są zapisywane w lokalnym katalogu 
+    aplikacji na iPhonie. Dostęp do tych danych mają tylko system iOS oraz sama aplikacja. 
+    Dane są usuwane wraz z odinstalowaniem aplikacji.
+</p>
+
+<h2>5. Twoje prawa</h2>
+<p>
+    Ponieważ aplikacja nie zbiera ani nie przechowuje danych poza Twoim urządzeniem, 
+    nie ma centralnej bazy danych, w której Twoje dane byłyby przetwarzane. Możesz:
+</p>
+<ul>
+    <li>Usunąć całą historię pomiarów w ustawieniach aplikacji (planowane w przyszłej wersji)</li>
+    <li>Odinstalować aplikację — wszystkie dane lokalne zostaną usunięte</li>
+    <li>Cofnąć uprawnienia w Ustawieniach iOS</li>
+</ul>
+
+<h2>6. Aplikacja jest w fazie testów (TestFlight)</h2>
+<p>
+    OPP Asystent jest obecnie dystrybuowany przez Apple TestFlight w wersji do testów 
+    wewnętrznych. Funkcjonalność i zachowanie aplikacji mogą się zmieniać. Korzystając 
+    z TestFlight, akceptujesz również politykę Apple TestFlight.
+</p>
+
+<h2>7. Zmiany w polityce prywatności</h2>
+<p>
+    Aktualna wersja tej polityki jest zawsze dostępna pod tym adresem URL. W razie 
+    istotnych zmian, użytkownicy zostaną poinformowani przez aktualizację aplikacji.
+</p>
+
+<h2>8. Kontakt</h2>
+<p>
+    Pytania dotyczące prywatności: 
+    <a href="mailto:slawek.gawinowski@me.com">slawek.gawinowski@me.com</a>
+</p>
+
+<footer>
+    OPP Asystent · Wersja MVP · Aplikacja niekomercyjna w fazie testów<br>
+    Aplikacja nie jest powiązana z GITD, CANARD, ani żadnym innym podmiotem rządowym. 
+    Dane o odcinkach OPP pochodzą z publicznie dostępnych źródeł.
+</footer>
+
+</body>
+</html>
