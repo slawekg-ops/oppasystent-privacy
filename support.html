@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wsparcie · OPP Asystent</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            max-width: 720px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+            color: #1a1a1a;
+        }
+        h1 {
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 8px;
+        }
+        h2 {
+            margin-top: 32px;
+            color: #2563eb;
+        }
+        .card {
+            background: #f0f9ff;
+            border-left: 4px solid #2563eb;
+            padding: 16px 20px;
+            margin: 16px 0;
+            border-radius: 8px;
+        }
+        .email {
+            font-family: 'SF Mono', Monaco, monospace;
+            font-size: 1.1em;
+            background: #fff;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+        ul {
+            padding-left: 24px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        a {
+            color: #2563eb;
+        }
+        footer {
+            margin-top: 48px;
+            padding-top: 16px;
+            border-top: 1px solid #ddd;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Wsparcie — OPP Asystent</h1>
+
+<p>
+    Dziękuję, że korzystasz z OPP Asystent! Jeśli masz pytania, sugestie 
+    lub zgłaszasz problem techniczny — jestem do dyspozycji.
+</p>
+
+<div class="card">
+    <strong>Kontakt bezpośredni:</strong><br>
+    <span class="email">gawinowski@o2.pl</span>
+</div>
+
+<h2>Najczęściej zadawane pytania</h2>
+
+<h3>Aplikacja nie wykrywa odcinka OPP</h3>
+<ul>
+    <li>Sprawdź czy uprawnienia lokalizacji są ustawione na "Zawsze" 
+        (Ustawienia iOS → OPP Asystent → Lokalizacja → Zawsze)</li>
+    <li>Upewnij się, że GPS ma sygnał (na początku jazdy może potrzebować 
+        10-30 sekund kalibracji)</li>
+    <li>Sprawdź czy odcinek na którym jesteś jest w bazie aplikacji 
+        (zakładka "OPP")</li>
+</ul>
+
+<h3>Głos nie działa w tle (z zablokowanym ekranem)</h3>
+<ul>
+    <li>Upewnij się, że masz uprawnienia "Zawsze" (Always) dla lokalizacji</li>
+    <li>Sprawdź, czy w Ustawieniach aplikacji "Komunikaty głosowe" są włączone</li>
+    <li>Upewnij się, że telefon nie jest w trybie cichym lub Nie przeszkadzać</li>
+    <li>Sprawdź, czy głośność systemowa jest powyżej 30%</li>
+</ul>
+
+<h3>Pomiar zatrzymał się po minimalizacji aplikacji</h3>
+<ul>
+    <li>Aplikacja działa w tle TYLKO z uprawnieniem "Zawsze" (Always)</li>
+    <li>Jeśli zamkniesz aplikację (swipe up w app switcher), pomiar zostanie 
+        zakończony — to świadome zachowanie</li>
+    <li>Po ponownym otwarciu aplikacji monitoring automatycznie się włączy</li>
+</ul>
+
+<h3>Aplikacja zużywa dużo baterii</h3>
+<ul>
+    <li>To normalne — aplikacja wykorzystuje GPS w sposób ciągły 
+        (potrzebny dla pomiaru średniej)</li>
+    <li>Zalecane: uruchamiaj aplikację dopiero w trasie, zamykaj po dotarciu 
+        do celu (force quit w app switcher)</li>
+    <li>Aplikacja sama nie zbiera danych w tle gdy zamkniesz ją świadomie</li>
+</ul>
+
+<h3>Czy aplikacja jest darmowa?</h3>
+<p>
+    Tak. Aplikacja jest w pełni bezpłatna — bez reklam, bez kont użytkownika, 
+    bez kosztów ukrytych. To projekt prywatny dla polskich kierowców.
+</p>
+
+<h3>Czy aplikacja działa za granicą?</h3>
+<p>
+    Nie. Aplikacja zawiera wyłącznie polskie odcinki OPP z bazy CANARD/GITD. 
+    Poza Polską aplikacja nie wykryje odcinków.
+</p>
+
+<h3>Gdzie znajdę politykę prywatności?</h3>
+<p>
+    <a href="https://slawekg-ops.github.io/oppasystent-privacy/">
+        Polityka prywatności OPP Asystent
+    </a>
+</p>
+
+<h2>Zgłaszanie błędów i sugestii</h2>
+
+<p>
+    Jeśli zauważysz błąd w aplikacji lub masz pomysł na poprawę:
+</p>
+
+<div class="card">
+    Napisz email na <span class="email">slawek.gawinowski@me.com</span> 
+    z opisem problemu lub sugestii. <br><br>
+    
+    Pomocne informacje przy zgłaszaniu błędu:
+    <ul>
+        <li>Model iPhone i wersja iOS</li>
+        <li>Wersja aplikacji (Ustawienia → O aplikacji)</li>
+        <li>Konkretny opis: co się stało, co miało się stać</li>
+        <li>Zrzut ekranu (jeśli dotyczy)</li>
+    </ul>
+</div>
+
+<h2>Aplikacja jest w fazie aktywnego rozwoju</h2>
+<p>
+    OPP Asystent to MVP (Minimum Viable Product) — wciąż rozwijam aplikację 
+    na podstawie feedbacku użytkowników. Jeśli czegoś brakuje, daj znać — 
+    Twoje sugestie konkretnie wpływają na kolejne wersje.
+</p>
+
+<footer>
+    OPP Asystent · Wersja MVP · Aplikacja niekomercyjna<br>
+    Aplikacja nie jest powiązana z GITD, CANARD ani żadnym innym podmiotem 
+    rządowym. Dane o odcinkach OPP pochodzą z publicznie dostępnych źródeł.
+</footer>
+
+</body>
+</html>
